@@ -292,17 +292,7 @@ const GovernanceAI = () => {
             alignSelf={"center"}
             justifySelf={"center"}
             m={"auto"}
-          >
-            <AristotleLogo
-              widthProps={400}
-              heightProps={400}
-              fillColor={`${
-                theme === ENUM.DARK
-                  ? "var(--color-dark-bg)"
-                  : "var(--color-light-bg)"
-              }`}
-            />
-          </Box>
+          ></Box>
           <ChatList chatData={messages} isThinking={isThinking} file={file} />
         </Box>
         <Box

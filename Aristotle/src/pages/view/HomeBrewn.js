@@ -151,39 +151,15 @@ const ChatRoom = () => {
         minHeight={550}
         // border={"1px solid red"}
       >
-        <Box
+       <Box
           p={2}
           flexGrow={1}
           display="flex"
           flexDirection="column"
           justifyContent={"flex-end"}
+          maxHeight={490}
           position={"relative"}
         >
-          <Box
-            position={"absolute"}
-            width={"100%"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            top={0}
-            left={0}
-            zIndex={-2}
-            alignSelf={"center"}
-            justifySelf={"center"}
-            m={"auto"}
-            mt={7}
-            // border={"1px solid red"}
-          >
-            <AristotleLogo
-              widthProps={400}
-              heightProps={400}
-              fillColor={`${
-                theme === ENUM.DARK
-                  ? "var(--color-dark-bg)"
-                  : "var(--color-light-bg)"
-              }`}
-            />
-          </Box>
           <ChatList
             chatData={messages}
             isThinking={isThinking}
