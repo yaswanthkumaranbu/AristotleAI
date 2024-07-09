@@ -343,7 +343,7 @@ export const AristotleLogo = ({ widthProps, heightProps }) => {
   return (
     <img
     src="../../assets/img/brand/centillion.png"
-    width={widthProps}
-    height={heightProps}
+    width={widthProps-100}
+    height={heightProps-100}
   />  );
 };
